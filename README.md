@@ -1,15 +1,1 @@
-# Aplikasi Jadwal Sholat
-Aplikasi ini merupakan percobaan aplikasi untu jadwal sholat di TV masjid
-
-## Features Aplikasi
-- indek : digunakan untuk menampilkan tampilan utama dari aplikasi
-- admin : digunakan untuk mengatur beberapa program
-- update jadwal : digunakan admin untuk mengatur jadwal sholatnya
-
-Cara Menjalankan Program
-Jalankan XAMPP, aktifkan Apache & MySQL.
-Buat database dan jalankan SQL di langkah 1.
-Simpan file PHP di dalam folder htdocs/jadwal_sholat/.
-Akses halaman utama: http://localhost/jadwal_sholat/index.php
-Edit jadwal di admin: http://localhost/jadwal_sholat/admin.php
-Update dari API: http://localhost/jadwal_sholat/update_jadwal.php
+Program pendaftaran atlet pesilat ini menggunakan bahasa C# berbasis console yang memungkinkan pengguna untuk memasukkan data beberapa atlet, seperti nama, umur, jenis kelamin, dan kelas tanding, kemudian menyimpannya ke dalam sebuah list dinamis. Program dimulai dengan menanyakan jumlah atlet yang ingin didaftarkan, lalu menggunakan perulangan for untuk menginput data tiap atlet dan menyimpannya sebagai objek Atlet dalam list daftarAtlet. Setelah semua data dimasukkan, program akan membersihkan layar dan menampilkan seluruh data atlet yang telah didaftarkan dalam format tabel yang rapi menggunakan Console.WriteLine dengan format string yang terstruktur. Untuk memperindah tampilan, digunakan juga pewarnaan teks melalui Console.ForegroundColor, dan jumlah total atlet yang terdaftar ditampilkan di bagian akhir, menutup aplikasi dengan pesan motivasi agar pengguna tahu proses telah selesai. Program ini sangat cocok untuk digunakan sebagai simulasi sederhana sistem pendaftaran dalam event atau kejuaraan pencak silat tingkat sekolah maupun daerah.
