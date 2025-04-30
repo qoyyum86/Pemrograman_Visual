@@ -44,3 +44,4 @@ C:\Users\ASUS\source\repos\pendaftaran_peserta\pendaftaran_peserta\bin\Debug\Sys
 C:\Users\ASUS\source\repos\pendaftaran_peserta\pendaftaran_peserta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ASUS\source\repos\pendaftaran_peserta\pendaftaran_peserta\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\ASUS\source\repos\pendaftaran_peserta\pendaftaran_peserta\obj\Debug\pendafta.4B233369.Up2Date
+C:\Users\ASUS\source\repos\pendaftaran_peserta\pendaftaran_peserta\obj\Debug\pendaftaran_peserta.Register.resources

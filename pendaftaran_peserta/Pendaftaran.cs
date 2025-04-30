@@ -63,5 +63,16 @@ namespace pendaftaran_peserta
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Menampilkan kembali form Dashboard
+            Dasboard dashboard = new Dasboard();
+            dashboard.Show();
+
+            // Menutup form Pendaftaran
+            this.Close();
+        }
+
+
     }
 }

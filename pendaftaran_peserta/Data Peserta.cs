@@ -142,7 +142,20 @@ namespace pendaftaran_peserta
             DeleteData();
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Tampilkan form Dasboard
+            Dasboard dasboardForm = new Dasboard();
+            dasboardForm.Show();
+
+            // Tutup form Data_Peserta saat ini
+            this.Close();
+        }
 
     }
 }

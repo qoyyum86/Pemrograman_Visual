@@ -45,5 +45,13 @@ namespace pendaftaran_peserta
             }
         }
 
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            Register registerForm = new Register();
+            registerForm.Show();
+            this.Hide(); // Menyembunyikan form login
+        }
+
+
     }
 }

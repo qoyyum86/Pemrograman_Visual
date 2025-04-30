@@ -37,5 +37,16 @@ namespace pendaftaran_peserta
             this.Hide();  // Menyembunyikan form Dasboard (opsional)
         }
 
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            // Tampilkan form Login
+            Login loginForm = new Login();
+            loginForm.Show();
+
+            // Tutup form Dasboard saat ini
+            this.Close();
+        }
+
+
     }
 }
