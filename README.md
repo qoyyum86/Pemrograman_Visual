@@ -1,2 +1,26 @@
-Aplikasi pendaftaran peserta pertandingan berbasis C# Windows Forms ini bekerja dengan memberikan antarmuka pengguna (form) untuk memasukkan data peserta silat, lalu menampilkannya kembali dalam bentuk pesan konfirmasi. Ketika aplikasi dijalankan, pengguna diminta mengisi beberapa data seperti nama atlet, kontingen, tinggi dan berat badan, kelas pertandingan, serta prestasi atau permasalahan yang dimiliki, dengan mengetikkan datanya pada kotak isian (TextBox) yang tersedia. Selain itu, pengguna juga dapat mengunggah bukti pembayaran berupa gambar dengan mengklik tombol "Upload Bukti Pembayaran", yang akan membuka dialog pemilihan file (OpenFileDialog), dan gambar yang dipilih akan ditampilkan di PictureBox sebagai pratinjau. Setelah semua data diisi dan gambar diunggah, pengguna menekan tombol "Kirim", dan program akan menggabungkan semua informasi input tersebut menjadi sebuah string lalu menampilkannya dalam kotak pesan (MessageBox), sebagai konfirmasi bahwa data telah berhasil dikirim. Program ini bekerja secara lokal, tidak menggunakan database, dan hanya untuk keperluan input serta visualisasi data secara instan di satu sesi.
-Link Tampilan di Figma : https://www.figma.com/design/0BJgfNG5BTukUYhlItK90r/Tampilan?node-id=0-1&p=f&t=jrP1WFGqxonJiU7S-0
+# 🥋 Aplikasi Pendaftaran Peserta Pencak Silat
+
+Aplikasi desktop berbasis Windows Forms (C#) untuk mencatat data peserta kejuaraan pencak silat. Aplikasi ini menggunakan **MySQL** sebagai basis data untuk menyimpan informasi peserta.
+
+## 🛠 Fitur
+
+- Form login admin
+- Halaman dashboard dengan navigasi ke:
+  - Form pendaftaran peserta
+  - Data peserta (opsional)
+- Penyimpanan data peserta ke MySQL:
+  - Nama
+  - Kontingen
+  - Umur dan Berat Badan
+  - Prestasi
+  - Kelas pertandingan
+
+## 🖥 Teknologi
+
+- C# (.NET Framework / WinForms)
+- MySQL
+- MySQL Connector/NET (`MySql.Data`)
+- Visual Studio 2019 / 2022
+
+## 📦 Struktur Proyek
+
