@@ -66,6 +66,7 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -98,48 +99,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dasboard.cs">
+    <Compile Include="Views\Dasboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dasboard.Designer.cs">
+    <Compile Include="Views\Dasboard.Designer.cs">
       <DependentUpon>Dasboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data Peserta.cs">
+    <Compile Include="Views\Data Peserta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data Peserta.Designer.cs">
+    <Compile Include="Views\Data Peserta.Designer.cs">
       <DependentUpon>Data Peserta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Models\Database.cs" />
+    <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pendaftaran.cs">
+    <Compile Include="Views\Pendaftaran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pendaftaran.Designer.cs">
+    <Compile Include="Views\Pendaftaran.Designer.cs">
       <DependentUpon>Pendaftaran.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Peserta.cs" />
+    <Compile Include="Controllers\PesertaController.cs" />
+    <Compile Include="Models\PesertaRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.cs">
+    <Compile Include="Views\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="Views\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dasboard.resx">
+    <EmbeddedResource Include="Views\Dasboard.resx">
       <DependentUpon>Dasboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data Peserta.resx">
+    <EmbeddedResource Include="Views\Data Peserta.resx">
       <DependentUpon>Data Peserta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pendaftaran.resx">
+    <EmbeddedResource Include="Views\Pendaftaran.resx">
       <DependentUpon>Pendaftaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -150,8 +155,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -168,5 +174,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac4feeecb911884542c4970aab26817d.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
